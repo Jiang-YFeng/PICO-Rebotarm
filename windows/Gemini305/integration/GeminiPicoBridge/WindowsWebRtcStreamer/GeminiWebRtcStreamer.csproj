@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../OrbbecSDK_DotNet/OrbbecSDK_DotNet-2-main/src/OrbbecSharp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="../../../OrbbecSDK_DotNet/OrbbecSDK_DotNet-2-main/OrbbecSDK/lib/win_x64/**/*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+    <None Include="../MediaMTX/mediamtx.yml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>mediamtx.yml</Link>
+    </None>
+  </ItemGroup>
+</Project>

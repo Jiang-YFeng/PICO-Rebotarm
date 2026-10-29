@@ -1,0 +1,40 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uild/
+[Bb]uilds/
+MemoryCaptures/
+Recordings/
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+.idea/
+*.csproj.user
+*.suo
+
+# .NET generated files and local caches
+**/bin/
+**/obj/
+.nuget/
+.dotnet-cli/
+
+# Runtime logs
+**/dual-video-logs/
+*.log
+*.tmp
+
+# Local secrets
+control_server.env
+*.secrets
+*.secret
+.env
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+

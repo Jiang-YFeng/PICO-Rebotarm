@@ -1,0 +1,28 @@
+logLevel: info
+logDestinations: [stdout]
+
+api: false
+metrics: false
+pprof: false
+playback: false
+rtmp: false
+hls: false
+srt: false
+moq: false
+
+rtsp: true
+rtspTransports: [tcp]
+rtspAddress: 127.0.0.1:8554
+
+webrtc: true
+webrtcAddress: __LAN_ADDRESS__:8889
+webrtcEncryption: false
+webrtcAllowOrigins: ["*"]
+webrtcLocalUDPAddress: __LAN_ADDRESS__:8189
+webrtcLocalTCPAddress: ""
+webrtcIPsFromInterfaces: false
+webrtcAdditionalHosts: [__LAN_ADDRESS__]
+
+paths:
+  gemini:
+    source: publisher
